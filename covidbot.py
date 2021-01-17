@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import urllib.request, urllib.error, urllib.parse
+import sys
 
 
 def query(thing):
@@ -34,7 +35,7 @@ def query(thing):
 
 
 
-TOKEN = 'Nzk4MTMxMzE2NjI0NDU3NzU4.X_wjtg.-DD0Xl6B1xmJ4oeR_m8_ufz1vuk'
+TOKEN = sys.argv[1]
 
 
 bot = commands.Bot(command_prefix='!')
